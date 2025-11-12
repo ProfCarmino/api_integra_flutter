@@ -1,5 +1,4 @@
 
-```markdown
 #  Exemplo Flutter – Integração com API e Tema Global
 
 Este projeto é um **exemplo didático** em Flutter que demonstra como integrar uma **API REST** a um aplicativo com **formulário, listagem de dados e tema global customizado**.
@@ -10,7 +9,6 @@ O código foi desenvolvido passo a passo para ilustrar:
 - Organização em camadas (UI, modelo e serviço);
 - Aplicação de tema visual (`ThemeData`) para cores e tipografia consistentes.
 
----
 
 ##  Funcionalidades
 
@@ -20,35 +18,13 @@ O código foi desenvolvido passo a passo para ilustrar:
  Excluir posts com confirmação por diálogo  
  Aplicar tema global com cores e botões personalizados  
 
----
 
-##  Estrutura do projeto
 
-```
-
-lib/
-├─ api/
-│   └─ posts_api.dart          # Camada de comunicação HTTP (API REST)
-│
-├─ models/
-│   └─ post.dart               # Modelo de dados Post (com fromJson)
-│
-├─ widgets/
-│   ├─ post_form.dart          # Formulário de criação/edição de posts
-│   └─ post_list.dart          # Lista de posts com botões de ação
-│
-├─ theme.dart                  # Tema global da aplicação (cores, botões, textos)
-└─ main.dart                   # Ponto de entrada (MaterialApp + tema + tela principal)
-
-```
-
----
 
 ##  API utilizada
 
 O aplicativo consome os dados de uma API REST hospedada no servidor:
 
-```
 
 Base URL: [http://185.137.92.41:3000](http://185.137.92.41:3000)
 Endpoints:
@@ -57,11 +33,9 @@ POST   /api/posts       → cria novo post
 PUT    /api/posts/:id   → atualiza um post existente
 DELETE /api/posts/:id   → exclui um post
 
-````
 
 As requisições são feitas usando o pacote [`http`](https://pub.dev/packages/http).
 
----
 
 ##  Tema global (`theme.dart`)
 
@@ -95,8 +69,6 @@ final ThemeData appTheme = ThemeData(
 
 Assim, todos os **botões**, **campos de texto** e **títulos** seguem um mesmo padrão visual.
 
----
-
 ##  Componentes principais
 
 ###  `PostForm`
@@ -110,8 +82,6 @@ Tela principal: exibe os posts, gerencia as ações de CRUD e mostra formulário
 ###  `PostsAPI`
 
 Camada de serviço responsável pelas requisições HTTP e conversão de JSON → objetos `Post`.
-
----
 
 ##  Executar o projeto
 
@@ -134,7 +104,6 @@ Camada de serviço responsável pelas requisições HTTP e conversão de JSON �
    flutter run
    ```
 
----
 
 ## Tecnologias utilizadas
 
@@ -143,7 +112,6 @@ Camada de serviço responsável pelas requisições HTTP e conversão de JSON �
 * [HTTP package](https://pub.dev/packages/http)
 * Arquitetura modular (camadas: API / Modelo / UI / Tema)
 
----
 
 ##  Créditos
 
@@ -151,12 +119,12 @@ Desenvolvido por **Prof. Carmino Gomes Jr.**
 Exemplo didático para aulas de **Desenvolvimento Flutter e Integração com APIs REST**.
 Baseado em práticas modernas de UI/UX e arquitetura limpa.
 
----
+
 
 ## Licença
 
 Este projeto é livre para uso educacional e pode ser modificado e redistribuído livremente com os devidos créditos.
 
-```
+
 
 
