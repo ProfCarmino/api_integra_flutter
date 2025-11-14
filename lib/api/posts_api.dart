@@ -28,7 +28,7 @@ class PostsAPI {
   // -------------------------------------------------------------
   // O endereço IP + porta do servidor que fornece os endpoints.
   // Este valor é usado como base para construir URLs completas.
-  static const String baseUrl = 'http://185.137.92.41:3000';
+  static const String baseUrl = 'https://back.standclass.com.br/';
 
   // -------------------------------------------------------------
   // MÉTODO: list()
